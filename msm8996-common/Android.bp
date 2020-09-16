@@ -77,6 +77,16 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "LetvRemoteControl",
+	owner: "leeco",
+	apk: "proprietary/app/LetvRemoteControl/LetvRemoteControl.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "UEIQuicksetSDKLeTV",
 	owner: "leeco",
 	apk: "proprietary/app/UEIQuicksetSDKLeTV/UEIQuicksetSDKLeTV.apk",
